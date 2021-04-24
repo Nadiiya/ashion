@@ -83,16 +83,16 @@
 <!-- Search End -->
 
 <!-- Js Plugins -->
-<script src="<?php echo $temp_html ?>js/jquery-3.3.1.min.js"></script>
-<script src="<?php echo $temp_html ?>js/bootstrap.min.js"></script>
-<script src="<?php echo $temp_html ?>js/jquery.magnific-popup.min.js"></script>
-<script src="<?php echo $temp_html ?>js/jquery-ui.min.js"></script>
-<script src="<?php echo $temp_html ?>js/mixitup.min.js"></script>
-<script src="<?php echo $temp_html ?>js/jquery.countdown.min.js"></script>
-<script src="<?php echo $temp_html ?>js/jquery.slicknav.js"></script>
-<script src="<?php echo $temp_html ?>js/owl.carousel.min.js"></script>
-<script src="<?php echo $temp_html ?>js/jquery.nicescroll.min.js"></script>
-<script src="<?php echo $temp_html ?>js/main.js"></script>
+<!--<script src="--><?php //echo $temp_html ?><!--js/jquery-3.3.1.min.js"></script>-->
+<!--<script src="--><?php //echo $temp_html ?><!--js/bootstrap.min.js"></script>-->
+<!--<script src="--><?php //echo $temp_html ?><!--js/jquery.magnific-popup.min.js"></script>-->
+<!--<script src="--><?php //echo $temp_html ?><!--js/jquery-ui.min.js"></script>-->
+<!--<script src="--><?php //echo $temp_html ?><!--js/mixitup.min.js"></script>-->
+<!--<script src="--><?php //echo $temp_html ?><!--js/jquery.countdown.min.js"></script>-->
+<!--<script src="--><?php //echo $temp_html ?><!--js/jquery.slicknav.js"></script>-->
+<!--<script src="--><?php //echo $temp_html ?><!--js/owl.carousel.min.js"></script>-->
+<!--<script src="--><?php //echo $temp_html ?><!--js/jquery.nicescroll.min.js"></script>-->
+<!--<script src="--><?php //echo $temp_html ?><!--js/main.js"></script>-->
 
 <?php wp_footer(); ?>
 </body>

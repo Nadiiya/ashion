@@ -1,1 +1,36 @@
-// @import "file";
+//variables
+@import "./base/variable";
+
+//npm styles
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~jquery-ui-bundle/jquery-ui.min.css";
+@import "~font-awesome/css/font-awesome.min.css";
+@import "~elegant-icons/style.css";
+@import "~magnific-popup/dist/magnific-popup.css";
+@import "~owl.carousel/src/scss/owl.carousel";
+@import "~slicknav/scss/slicknav";
+
+//base
+@import "base/base";
+@import "base/mixins";
+@import "base/responsive";
+
+//pages
+@import "pages/blog";
+@import "pages/categories";
+@import "pages/checkout";
+@import "pages/contact";
+@import "pages/home-page";
+@import "pages/shop";
+@import "pages/shop-cart";
+@import "pages/product";
+
+//blocks
+@import "blocks/header";
+@import "blocks/footer";
+@import "blocks/blog-sidebar";
+
+//components
+@import "components/breadcrumb";
+@import "components/product-details";
+@import "components/blog-details";
