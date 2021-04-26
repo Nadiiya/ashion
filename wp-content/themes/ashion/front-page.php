@@ -1,4 +1,3 @@
-front-page.php
 <?php
 global $temp_html;
 get_header(); ?>

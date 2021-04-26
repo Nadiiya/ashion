@@ -1,1 +1,2 @@
-page.php
+<?php
+echo 'page.php';

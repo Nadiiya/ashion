@@ -1,5 +1,6 @@
-archive.php
-<?php get_header(); ?>
+<?php
+echo 'archive.php';
+get_header(); ?>
 <!-- Breadcrumb Begin -->
 <div class="breadcrumb-option">
 	<div class="container">

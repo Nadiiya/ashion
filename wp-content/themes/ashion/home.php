@@ -1,2 +1,3 @@
-home.php
+<?php
+echo 'home.php';
 

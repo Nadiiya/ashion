@@ -1,1 +1,2 @@
-search.php
+<?php
+echo 'search.php';
