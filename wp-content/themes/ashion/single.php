@@ -73,7 +73,7 @@ $category = get_the_category()[0]->cat_name;
 						<a href="#" class="leave-btn">Leave a comment</a>
 						<div class="blog__comment__item">
 							<div class="blog__comment__item__pic">
-								<img src="img/blog/details/comment-1.jpg" alt="">
+								<img src="<?php echo $temp_html ?>img/blog/details/comment-1.jpg" alt="">
 							</div>
 							<div class="blog__comment__item__text">
 								<h6>Brandon Kelley</h6>
@@ -88,7 +88,7 @@ $category = get_the_category()[0]->cat_name;
 						</div>
 						<div class="blog__comment__item blog__comment__item--reply">
 							<div class="blog__comment__item__pic">
-								<img src="img/blog/details/comment-2.jpg" alt="">
+								<img src="<?php echo $temp_html ?>img/blog/details/comment-2.jpg" alt="">
 							</div>
 							<div class="blog__comment__item__text">
 								<h6>Brandon Kelley</h6>
@@ -103,7 +103,7 @@ $category = get_the_category()[0]->cat_name;
 						</div>
 						<div class="blog__comment__item">
 							<div class="blog__comment__item__pic">
-								<img src="img/blog/details/comment-3.jpg" alt="">
+								<img src="<?php echo $temp_html ?>img/blog/details/comment-3.jpg" alt="">
 							</div>
 							<div class="blog__comment__item__text">
 								<h6>Brandon Kelley</h6>
@@ -139,7 +139,7 @@ $category = get_the_category()[0]->cat_name;
 						</div>
 						<a href="#" class="blog__feature__item">
 							<div class="blog__feature__item__pic">
-								<img src="img/blog/sidebar/fp-1.jpg" alt="">
+								<img src="<?php echo $temp_html ?>img/blog/sidebar/fp-1.jpg" alt="">
 							</div>
 							<div class="blog__feature__item__text">
 								<h6>Amf Cannes Red Carpet Celebrities Kend...</h6>
@@ -148,7 +148,7 @@ $category = get_the_category()[0]->cat_name;
 						</a>
 						<a href="#" class="blog__feature__item">
 							<div class="blog__feature__item__pic">
-								<img src="img/blog/sidebar/fp-2.jpg" alt="">
+								<img src="<?php echo $temp_html ?>img/blog/sidebar/fp-2.jpg" alt="">
 							</div>
 							<div class="blog__feature__item__text">
 								<h6>Amf Cannes Red Carpet Celebrities Kend...</h6>
@@ -157,7 +157,7 @@ $category = get_the_category()[0]->cat_name;
 						</a>
 						<a href="#" class="blog__feature__item">
 							<div class="blog__feature__item__pic">
-								<img src="img/blog/sidebar/fp-3.jpg" alt="">
+								<img src="<?php echo $temp_html ?>img/blog/sidebar/fp-3.jpg" alt="">
 							</div>
 							<div class="blog__feature__item__text">
 								<h6>Amf Cannes Red Carpet Celebrities Kend...</h6>
@@ -186,7 +186,7 @@ $category = get_the_category()[0]->cat_name;
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-lg-2 col-md-4 col-sm-4 col-md-6 col-sm-6 p-0">
-				<div class="instagram__item set-bg" data-setbg="img/instagram/insta-1.jpg">
+				<div class="instagram__item set-bg" data-setbg="<?php echo $temp_html ?>img/instagram/insta-1.jpg">
 					<div class="instagram__text">
 						<i class="fa fa-instagram"></i>
 						<a href="#">@ ashion_shop</a>
@@ -194,7 +194,7 @@ $category = get_the_category()[0]->cat_name;
 				</div>
 			</div>
 			<div class="col-lg-2 col-md-4 col-sm-4 col-md-6 col-sm-6 p-0">
-				<div class="instagram__item set-bg" data-setbg="img/instagram/insta-2.jpg">
+				<div class="instagram__item set-bg" data-setbg="<?php echo $temp_html ?>img/instagram/insta-2.jpg">
 					<div class="instagram__text">
 						<i class="fa fa-instagram"></i>
 						<a href="#">@ ashion_shop</a>
@@ -202,7 +202,7 @@ $category = get_the_category()[0]->cat_name;
 				</div>
 			</div>
 			<div class="col-lg-2 col-md-4 col-sm-4 col-md-6 col-sm-6 p-0">
-				<div class="instagram__item set-bg" data-setbg="img/instagram/insta-3.jpg">
+				<div class="instagram__item set-bg" data-setbg="<?php echo $temp_html ?>img/instagram/insta-3.jpg">
 					<div class="instagram__text">
 						<i class="fa fa-instagram"></i>
 						<a href="#">@ ashion_shop</a>
@@ -210,7 +210,7 @@ $category = get_the_category()[0]->cat_name;
 				</div>
 			</div>
 			<div class="col-lg-2 col-md-4 col-sm-4 col-md-6 col-sm-6 p-0">
-				<div class="instagram__item set-bg" data-setbg="img/instagram/insta-4.jpg">
+				<div class="instagram__item set-bg" data-setbg="<?php echo $temp_html ?>img/instagram/insta-4.jpg">
 					<div class="instagram__text">
 						<i class="fa fa-instagram"></i>
 						<a href="#">@ ashion_shop</a>
@@ -218,7 +218,7 @@ $category = get_the_category()[0]->cat_name;
 				</div>
 			</div>
 			<div class="col-lg-2 col-md-4 col-sm-4 col-md-6 col-sm-6 p-0">
-				<div class="instagram__item set-bg" data-setbg="img/instagram/insta-5.jpg">
+				<div class="instagram__item set-bg" data-setbg="<?php echo $temp_html ?>img/instagram/insta-5.jpg">
 					<div class="instagram__text">
 						<i class="fa fa-instagram"></i>
 						<a href="#">@ ashion_shop</a>
@@ -226,7 +226,7 @@ $category = get_the_category()[0]->cat_name;
 				</div>
 			</div>
 			<div class="col-lg-2 col-md-4 col-sm-4 col-md-6 col-sm-6 p-0">
-				<div class="instagram__item set-bg" data-setbg="img/instagram/insta-6.jpg">
+				<div class="instagram__item set-bg" data-setbg="<?php echo $temp_html ?>img/instagram/insta-6.jpg">
 					<div class="instagram__text">
 						<i class="fa fa-instagram"></i>
 						<a href="#">@ ashion_shop</a>
