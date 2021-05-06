@@ -1,60 +1,31 @@
-<?php global $temp_html ?>
 <!-- Footer Section Begin -->
 <footer class="footer">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-4 col-md-6 col-sm-7">
 				<div class="footer__about">
-					<div class="footer__logo">
-						<a href="./index.html"><img src="<?php echo $temp_html ?>img/logo.png" alt=""></a>
-					</div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-						cilisis.</p>
-					<div class="footer__payment">
-						<a href="#"><img src="<?php echo $temp_html ?>img/payment/payment-1.png" alt=""></a>
-						<a href="#"><img src="<?php echo $temp_html ?>img/payment/payment-2.png" alt=""></a>
-						<a href="#"><img src="<?php echo $temp_html ?>img/payment/payment-3.png" alt=""></a>
-						<a href="#"><img src="<?php echo $temp_html ?>img/payment/payment-4.png" alt=""></a>
-						<a href="#"><img src="<?php echo $temp_html ?>img/payment/payment-5.png" alt=""></a>
-					</div>
+					<?php dynamic_sidebar('footer-col-1'); ?>
 				</div>
 			</div>
 			<div class="col-lg-2 col-md-3 col-sm-5">
 				<div class="footer__widget">
-					<h6>Quick links</h6>
-					<ul>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Blogs</a></li>
-						<li><a href="#">Contact</a></li>
-						<li><a href="#">FAQ</a></li>
-					</ul>
+					<?php dynamic_sidebar('footer-col-2'); ?>
 				</div>
 			</div>
 			<div class="col-lg-2 col-md-3 col-sm-4">
 				<div class="footer__widget">
-					<h6>Account</h6>
-					<ul>
-						<li><a href="#">My Account</a></li>
-						<li><a href="#">Orders Tracking</a></li>
-						<li><a href="#">Checkout</a></li>
-						<li><a href="#">Wishlist</a></li>
-					</ul>
+					<?php dynamic_sidebar('footer-col-3'); ?>
 				</div>
 			</div>
 			<div class="col-lg-4 col-md-8 col-sm-8">
 				<div class="footer__newslatter">
+					<?php //TODO Subscribe form ?>
 					<h6>NEWSLETTER</h6>
 					<form action="#">
 						<input type="text" placeholder="Email">
 						<button type="submit" class="site-btn">Subscribe</button>
 					</form>
-					<div class="footer__social">
-						<a href="#"><i class="fa fa-facebook"></i></a>
-						<a href="#"><i class="fa fa-twitter"></i></a>
-						<a href="#"><i class="fa fa-youtube-play"></i></a>
-						<a href="#"><i class="fa fa-instagram"></i></a>
-						<a href="#"><i class="fa fa-pinterest"></i></a>
-					</div>
+					<?php dynamic_sidebar('footer-col-4'); ?>
 				</div>
 			</div>
 		</div>
@@ -81,18 +52,6 @@
 	</div>
 </div>
 <!-- Search End -->
-
-<!-- Js Plugins -->
-<!--<script src="--><?php //echo $temp_html ?><!--js/jquery-3.3.1.min.js"></script>-->
-<!--<script src="--><?php //echo $temp_html ?><!--js/bootstrap.min.js"></script>-->
-<!--<script src="--><?php //echo $temp_html ?><!--js/jquery.magnific-popup.min.js"></script>-->
-<!--<script src="--><?php //echo $temp_html ?><!--js/jquery-ui.min.js"></script>-->
-<!--<script src="--><?php //echo $temp_html ?><!--js/mixitup.min.js"></script>-->
-<!--<script src="--><?php //echo $temp_html ?><!--js/jquery.countdown.min.js"></script>-->
-<!--<script src="--><?php //echo $temp_html ?><!--js/jquery.slicknav.js"></script>-->
-<!--<script src="--><?php //echo $temp_html ?><!--js/owl.carousel.min.js"></script>-->
-<!--<script src="--><?php //echo $temp_html ?><!--js/jquery.nicescroll.min.js"></script>-->
-<!--<script src="--><?php //echo $temp_html ?><!--js/main.js"></script>-->
 
 <?php wp_footer(); ?>
 </body>
