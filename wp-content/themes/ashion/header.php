@@ -18,15 +18,6 @@ $header = new ThemeHeader();
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
 	      rel="stylesheet">
 
-	<!-- Css Styles -->
-<!--	<link rel="stylesheet" href="--><?php //echo $temp_html ?><!--css/bootstrap.min.css" type="text/css">-->
-<!--	<link rel="stylesheet" href="--><?php //echo $temp_html ?><!--css/font-awesome.min.css" type="text/css">-->
-<!--	<link rel="stylesheet" href="--><?php //echo $temp_html ?><!--css/elegant-icons.css" type="text/css">-->
-<!--	<link rel="stylesheet" href="--><?php //echo $temp_html ?><!--css/jquery-ui.min.css" type="text/css">-->
-<!--	<link rel="stylesheet" href="--><?php //echo $temp_html ?><!--css/magnific-popup.css" type="text/css">-->
-<!--	<link rel="stylesheet" href="--><?php //echo $temp_html ?><!--css/owl.carousel.min.css" type="text/css">-->
-<!--	<link rel="stylesheet" href="--><?php //echo $temp_html ?><!--css/slicknav.min.css" type="text/css">-->
-<!--	<link rel="stylesheet" href="--><?php //echo $temp_html ?><!--css/style.css" type="text/css">-->
 </head>
 
 <body <?php body_class(); ?>>
@@ -66,6 +57,23 @@ $header = new ThemeHeader();
 		<div class="row">
 			<?php echo $header->get_header_logo(); ?>
 			<?php echo $header->get_main_menu(); ?>
+			<div class="col-lg-3">
+				<div class="header__right">
+					<div class="header__right__auth">
+						<a href="#">Login</a>
+						<a href="#">Register</a>
+					</div>
+					<ul class="header__right__widget">
+						<li><span class="icon_search search-switch"></span></li>
+						<li><a href="#"><span class="icon_heart_alt"></span>
+								<div class="tip">2</div>
+							</a></li>
+						<li><a href="#"><span class="icon_bag_alt"></span>
+								<div class="tip">2</div>
+							</a></li>
+					</ul>
+				</div>
+			</div>
 		</div>
 		<div class="canvas__open">
 			<i class="fa fa-bars"></i>
