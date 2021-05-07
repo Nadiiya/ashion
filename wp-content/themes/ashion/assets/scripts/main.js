@@ -8,6 +8,9 @@ import 'jquery-countdown/dist/jquery.countdown.min';
 import 'owl.carousel/dist/owl.carousel.min';
 import 'jquery.nicescroll/dist/jquery.nicescroll.min';
 import 'slicknav/dist/jquery.slicknav';
+import 'masonry-layout/dist/masonry.pkgd.min';
+
+import './pages/news';
 
 'use strict';
 
