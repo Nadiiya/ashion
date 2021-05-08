@@ -4,7 +4,7 @@ get_header(); ?>
 <?php echo get_breadcrumbs_section(); ?>
 
 <!-- Blog Section Begin -->
-<section class="blog spad">
+<section class="blog-section spad">
 	<div class="container">
 		<div class="row">
 			<?php
