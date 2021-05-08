@@ -6,6 +6,10 @@ function theme_scripts() {
 	// Main CSS
 	wp_enqueue_style('main-stylesheet', asset_path( 'styles/main.css' ), false, '1.0.0');
 
+	//Google Font
+	wp_enqueue_style('font-cookie', 'https://fonts.googleapis.com/css2?family=Cookie&display=swap', false, '1.0.0');
+	wp_enqueue_style('font-montserrat', 'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap', false, '1.0.0');
+
 	// Deregister the jquery version bundled with WordPress
 	wp_deregister_script('jquery');
 
