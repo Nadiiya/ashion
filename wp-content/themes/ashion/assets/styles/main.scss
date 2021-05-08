@@ -13,7 +13,6 @@
 //base
 @import "base/base";
 @import "base/mixins";
-@import "base/responsive";
 
 //pages
 @import "pages/blog";
@@ -34,3 +33,6 @@
 @import "components/breadcrumb";
 @import "components/product-details";
 @import "components/blog-details";
+
+//responsive
+@import "base/responsive";
