@@ -1,6 +1,19 @@
 <?php
 add_action( 'widgets_init', 'ashion_widget_areas' );
 function ashion_widget_areas(){
+	//Right Sidebar
+	register_sidebar( array(
+		'name'          => __('Right Sidebar (Single Page)'),
+		'id'            => 'right-sidebar',
+		'description'   => '',
+		'class'         => '',
+		'before_widget' => '<div class="blog__sidebar__item">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<div class="section-title"><h4>',
+		'after_title'   => '</h4></div>',
+		'before_sidebar' => '',
+		'after_sidebar'  => '',
+	) );
 	//Footer Column 1
 	register_sidebar( array(
 		'name'          => __('Footer Column 1'),
