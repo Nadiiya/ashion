@@ -1,4 +1,5 @@
-<?php global $temp_html;
+<?php
+global $temp_html;
 require_once THEME_DIR .'/inc/classes/ThemeHeader.class.php';
 
 $header = new ThemeHeader();

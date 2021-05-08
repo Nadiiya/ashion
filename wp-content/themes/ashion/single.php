@@ -2,7 +2,6 @@
 get_header();
 
 $title = get_the_title();
-$data = get_the_date();
 $content = get_the_content();
 $date = get_the_date('M d, Y');
 $author = get_the_author();

@@ -1,8 +1,7 @@
 <?php
 get_header(); ?>
-<!-- Breadcrumb Begin -->
+
 <?php echo get_breadcrumbs_section(); ?>
-<!-- Breadcrumb End -->
 
 <!-- Blog Section Begin -->
 <section class="blog spad">
