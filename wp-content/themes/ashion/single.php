@@ -66,6 +66,7 @@ $category = get_the_category()[0]->cat_name;
 							</div>
 						</div>
 					</div>
+					<?php comments_template(); ?>
 					<div class="blog__details__comment">
 						<h5>3 Comment</h5>
 						<a href="#" class="leave-btn">Leave a comment</a>
