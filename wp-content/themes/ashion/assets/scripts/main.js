@@ -12,6 +12,7 @@ import 'masonry-layout/dist/masonry.pkgd.min';
 
 import './pages/news';
 import './pages/team';
+import './pages/map';
 
 'use strict';
 
