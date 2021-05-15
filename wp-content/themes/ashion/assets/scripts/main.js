@@ -11,6 +11,7 @@ import 'slicknav/dist/jquery.slicknav';
 import 'masonry-layout/dist/masonry.pkgd.min';
 
 import './pages/news';
+import './pages/team';
 
 'use strict';
 
