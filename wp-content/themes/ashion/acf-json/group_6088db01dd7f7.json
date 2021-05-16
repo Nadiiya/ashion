@@ -1,6 +1,6 @@
 {
     "key": "group_6088db01dd7f7",
-    "title": "Thame settings",
+    "title": "Thame Settings",
     "fields": [
         {
             "key": "field_6088db41c7f28",
@@ -264,6 +264,47 @@
                             "placeholder": ""
                         }
                     ]
+                },
+                {
+                    "key": "field_60a0faae7cbec",
+                    "label": "Sbsscribe Title",
+                    "name": "subscribe_title",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_60a0fac97cbed",
+                    "label": "Subscribe Form",
+                    "name": "subscribe_form",
+                    "type": "post_object",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "wpcf7_contact_form"
+                    ],
+                    "taxonomy": "",
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "return_format": "id",
+                    "ui": 1
                 }
             ]
         },
@@ -320,5 +361,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1621058835
+    "modified": 1621164234
 }
