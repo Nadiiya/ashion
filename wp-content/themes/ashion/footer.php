@@ -19,12 +19,6 @@
 			</div>
 			<div class="col-lg-4 col-md-8 col-sm-8">
 				<div class="footer__newslatter">
-					<?php //TODO Subscribe form ?>
-					<h6>NEWSLETTER</h6>
-					<form action="#">
-						<input type="text" placeholder="Email">
-						<button type="submit" class="site-btn">Subscribe</button>
-					</form>
 					<?php dynamic_sidebar('footer-col-4'); ?>
 				</div>
 			</div>

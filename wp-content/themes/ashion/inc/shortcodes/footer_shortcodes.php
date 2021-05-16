@@ -69,6 +69,7 @@ function footer_social_shortcode() {
 		$social_icon = $social_item['icon'];
 		$html_social .= '<a href="' . $social_link . '">' . $social_icon . '</a>';
 	}
+
 	$html_social_block = <<<HTML
 <div class="footer__social">
 	{$html_social}
@@ -78,3 +79,24 @@ HTML;
 	return $html_social_block;
 }
 add_shortcode('footer-social', 'footer_social_shortcode');
+
+//Subscribe
+function footer_subscribe_shortcode() {
+	$subscribe_title = get_field('footer_subscribe_title', 'options');
+	$subscribe_form_id = get_field('footer_subscribe_form', 'options');
+
+	if ( empty($subscribe_form_id)) {
+		return false;
+	}
+	$subscribe_title_html = $subscribe_title ? '<h6>' . $subscribe_title . '</h6>' : '';
+
+	$subscribe_form_html =  do_shortcode( '[contact-form-7 id="' . $subscribe_form_id . '" title="Subscription (Footer)"]' );
+
+	$html_subscribe_block = <<<HTML
+{$subscribe_title_html}
+{$subscribe_form_html}
+HTML;
+
+	return $html_subscribe_block;
+}
+add_shortcode('footer-subscribe', 'footer_subscribe_shortcode');
