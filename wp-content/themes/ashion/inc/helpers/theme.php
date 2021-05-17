@@ -1,6 +1,6 @@
 <?php
 function get_breadcrumbs_section () {
-	$breadcrumbs = yoast_breadcrumb('<div class="breadcrumb__links">', '<div>', false);
+	$breadcrumbs = yoast_breadcrumb('<div class="breadcrumb__links">', '</div>', false);
 	$block =  <<<HTML
 <div class="breadcrumb-option">
 	<div class="container">

@@ -1,5 +1,4 @@
 <?php
-global $temp_html;
 class ThemeHeader {
 	public $acf_fields;
 	function __construct() {
