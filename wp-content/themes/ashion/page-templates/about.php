@@ -6,7 +6,7 @@
 
 require_once THEME_DIR .'/inc/classes/ThemeAbout.class.php';
 
-$about = new ThemeAbout();
+$about = new ThemeAdvantages();
 
 $acf_fields = get_field('content');
 

@@ -1,5 +1,11 @@
 <?php
 global $temp_html;
+require_once THEME_DIR .'/inc/classes/ThemeAdvantages.class.php';
+
+get_header();
+
+echo get_breadcrumbs_section();
+
 get_header(); ?>
 <!-- Categories Section Begin -->
 <section class="categories">
@@ -268,37 +274,32 @@ get_header(); ?>
 <!-- Product Section End -->
 
 <!-- Banner Section Begin -->
-<section class="banner set-bg" data-setbg="<?php echo $temp_html ?>img/banner/banner-1.jpg">
-	<div class="container">
-		<div class="row">
-			<div class="col-xl-7 col-lg-8 m-auto">
-				<div class="banner__slider owl-carousel">
-					<div class="banner__item">
-						<div class="banner__text">
-							<span>The Chloe Collection</span>
-							<h1>The Project Jacket</h1>
-							<a href="#">Shop now</a>
-						</div>
-					</div>
-					<div class="banner__item">
-						<div class="banner__text">
-							<span>The Chloe Collection</span>
-							<h1>The Project Jacket</h1>
-							<a href="#">Shop now</a>
-						</div>
-					</div>
-					<div class="banner__item">
-						<div class="banner__text">
-							<span>The Chloe Collection</span>
-							<h1>The Project Jacket</h1>
-							<a href="#">Shop now</a>
-						</div>
+<?php
+$slider_data = get_field('slider');
+if (!empty($slider_data )):
+	$background = ($slider_data['background_image']) ? $slider_data['background_image']['url'] : '';
+	$slides = $slider_data['slides'];
+	?>
+	<section class="banner set-bg" data-setbg="<?php echo $background ?>">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-7 col-lg-8 m-auto">
+					<div class="banner__slider owl-carousel">
+						<?php foreach ($slides as $slide): ?>
+							<div class="banner__item">
+								<div class="banner__text">
+									<span><?php echo $slide['subtitle'] ?></span>
+									<h1><?php echo $slide['title'] ?></h1>
+									<a href="<?php echo $slide['link']; ?>"><?php echo $slide['title']; ?></a>
+								</div>
+							</div>
+						<?php endforeach; ?>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</section>
+	</section>
+<?php endif; ?>
 <!-- Banner Section End -->
 
 <!-- Trend Section Begin -->
@@ -475,84 +476,25 @@ get_header(); ?>
 </section>
 <!-- Trend Section End -->
 
-<!-- Discount Section Begin -->
-<section class="discount">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-6 p-0">
-				<div class="discount__pic">
-					<img src="<?php echo $temp_html ?>img/discount.jpg" alt="">
-				</div>
-			</div>
-			<div class="col-lg-6 p-0">
-				<div class="discount__text">
-					<div class="discount__text__title">
-						<span>Discount</span>
-						<h2>Summer 2019</h2>
-						<h5><span>Sale</span> 50%</h5>
-					</div>
-					<div class="discount__countdown" id="countdown-time">
-						<div class="countdown__item">
-							<span>22</span>
-							<p>Days</p>
-						</div>
-						<div class="countdown__item">
-							<span>18</span>
-							<p>Hour</p>
-						</div>
-						<div class="countdown__item">
-							<span>46</span>
-							<p>Min</p>
-						</div>
-						<div class="countdown__item">
-							<span>05</span>
-							<p>Sec</p>
-						</div>
-					</div>
-					<a href="#">Shop now</a>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- Discount Section End -->
+<?php
+$advantages = new ThemeAdvantages();
 
-<!-- Services Section Begin -->
-<section class="services spad">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-3 col-md-4 col-sm-6">
-				<div class="services__item">
-					<i class="fa fa-car"></i>
-					<h6>Free Shipping</h6>
-					<p>For all oder over $99</p>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-4 col-sm-6">
-				<div class="services__item">
-					<i class="fa fa-money"></i>
-					<h6>Money Back Guarantee</h6>
-					<p>If good have Problems</p>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-4 col-sm-6">
-				<div class="services__item">
-					<i class="fa fa-support"></i>
-					<h6>Online Support 24/7</h6>
-					<p>Dedicated support</p>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-4 col-sm-6">
-				<div class="services__item">
-					<i class="fa fa-headphones"></i>
-					<h6>Payment Secure</h6>
-					<p>100% secure payment</p>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<!-- Services Section End -->
+$acf_fields = get_field('content');
+if(!empty($acf_fields)) {
+	foreach($acf_fields as $about_block) {
+		$layout = $about_block['acf_fc_layout'];
+		switch($layout) {
+			case 'text_image':
+				echo $advantages->text_image($about_block);
+				break;
+			case 'services':
+				echo $advantages->services($about_block);
+				break;
+		}
+	}
+}
+?>
+
 
 <!-- Instagram Begin -->
 <div class="instagram">

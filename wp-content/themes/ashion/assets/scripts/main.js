@@ -1,18 +1,19 @@
 //npm scripts
-import 'popper.js/dist/popper.min';
-import 'bootstrap/dist/js/bootstrap';
-import 'jquery-ui-bundle/jquery-ui';
-import 'magnific-popup/dist/jquery.magnific-popup.min';
-import 'mixitup/dist/mixitup.min';
-import 'jquery-countdown/dist/jquery.countdown.min';
-import 'owl.carousel/dist/owl.carousel.min';
-import 'jquery.nicescroll/dist/jquery.nicescroll.min';
-import 'slicknav/dist/jquery.slicknav';
-import 'masonry-layout/dist/masonry.pkgd.min';
+import 'popper.js/dist/popper.min'
+import 'bootstrap/dist/js/bootstrap'
+import 'jquery-ui-bundle/jquery-ui'
+import 'magnific-popup/dist/jquery.magnific-popup.min'
+import 'mixitup/dist/mixitup.min'
+import 'jquery-countdown/dist/jquery.countdown.min'
+import 'owl.carousel/dist/owl.carousel.min'
+import 'jquery.nicescroll/dist/jquery.nicescroll.min'
+import 'slicknav/dist/jquery.slicknav'
+import 'masonry-layout/dist/masonry.pkgd.min'
 
-import './pages/news';
-import './pages/team';
-import './pages/map';
+import './pages/news'
+import './pages/team'
+import './pages/map'
+import './components/discount'
 
 'use strict';
 
@@ -152,30 +153,36 @@ import './pages/map';
 	/*------------------
 		CountDown
 	--------------------*/
-	// For demo preview start
-	var today = new Date();
-	var dd = String(today.getDate()).padStart(2, '0');
-	var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-	var yyyy = today.getFullYear();
-
-	if(mm == 12) {
-		mm = '01';
-		yyyy = yyyy + 1;
-	} else {
-		mm = parseInt(mm) + 1;
-		mm = String(mm).padStart(2, '0');
-	}
-	var timerdate = mm + '/' + dd + '/' + yyyy;
-	// For demo preview end
+	//For demo preview start
+	// var today = new Date();
+	// var dd = String(today.getDate()).padStart(2, '0');
+	// var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+	// var yyyy = today.getFullYear();
+	//
+	// if(mm == 12) {
+	// 	mm = '01';
+	// 	yyyy = yyyy + 1;
+	// } else {
+	// 	mm = parseInt(mm) + 1;
+	// 	mm = String(mm).padStart(2, '0');
+	// }
+	// var timerdate = mm + '/' + dd + '/' + yyyy;
+	// // For demo preview end
 
 
 	// Uncomment below and use your date //
 
-	/* var timerdate = "2020/12/30" */
+	//var timerdate = '2021/05/19';
+	//var timerdate = $("#countdown-time").attr('data-time');
 
-	$("#countdown-time").countdown(timerdate, function(event) {
-		$(this).html(event.strftime("<div class='countdown__item'><span>%D</span> <p>Day</p> </div>" + "<div class='countdown__item'><span>%H</span> <p>Hour</p> </div>" + "<div class='countdown__item'><span>%M</span> <p>Min</p> </div>" + "<div class='countdown__item'><span>%S</span> <p>Sec</p> </div>"));
-	});
+	// $('#countdown-time').countdown('2021/05/20', function(event) {
+	// 	var $this = $(this).html(event.strftime(''
+	// 			+ '<span>%w</span> weeks '
+	// 			+ '<span>%d</span> days '
+	// 			+ '<span>%H</span> hr '
+	// 			+ '<span>%M</span> min '
+	// 			+ '<span>%S</span> sec'));
+	// });
 
 	/*-------------------
 		Range Slider

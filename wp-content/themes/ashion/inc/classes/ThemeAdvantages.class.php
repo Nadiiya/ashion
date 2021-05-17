@@ -19,33 +19,22 @@ HTML;
 
 
 		// Text
-		//TODO add fields for discount__countdown values
 		$text = $data['text'];
+		$finish_discount_date = $data['finish_date'];
+		$discount_title = $data['discount_title'];
+		$per_sent = $data['discount_per_sent'];
+		$link = $data['buy_now_link'];
 		$html_text = <<<HTML
 <div class="col-lg-6 p-0">
     <div class="discount__text">
         <div class="discount__text__title">
-           {$text}
+			<span>Discount</span>
+			<h2>{$discount_title}</h2>
+			<h5><span>Sale</span> {$per_sent}%</h5>
         </div>
-        <div class="discount__countdown" id="countdown-time">
-	        <div class="countdown__item">
-		        <span>29</span>
-		        <p>Day</p>
-	        </div>
-	        <div class="countdown__item">
-		        <span>18</span>
-		        <p>Hour</p>
-	        </div>
-	        <div class="countdown__item">
-		        <span>20</span>
-		         <p>Min</p>
-	         </div>
-	        <div class="countdown__item">
-		         <span>19</span>
-		         <p>Sec</p>
-	        </div>
+        <div class="discount__countdown" id="countdown-time" data-time="{$finish_discount_date}">
         </div>
-        <a href="#">Shop now</a>
+        <a href="{$link['url']}">{$link['title']}</a>
     </div>
 </div>
 
