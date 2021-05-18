@@ -37,7 +37,7 @@ $header = new ThemeHeader();
 			</a></li>
 	</ul>
 	<div class="offcanvas__logo">
-		<a href="./index.html"><img src="<?php echo $temp_html ?>img/logo.png" alt=""></a>
+		<?php echo $header->get_header_logo(); ?>
 	</div>
 	<div id="mobile-menu-wrap"></div>
 	<div class="offcanvas__auth">

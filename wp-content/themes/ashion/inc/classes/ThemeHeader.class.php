@@ -33,10 +33,10 @@ function get_main_menu() {
 		'menu_class' => '',
 	));
 		$block = <<<HTML
-			<div class="col-xl-6 col-lg-7">
-			{$main_menu}
-			</div>
-		HTML;
+<div class="col-xl-6 col-lg-7">
+	{$main_menu}
+</div>
+HTML;
 
 		return $block;
 	}
