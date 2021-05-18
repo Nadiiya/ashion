@@ -1,0 +1,23 @@
+.sbi_photo::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  opacity: 0;
+  z-index: -1;
+  -webkit-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  transition: all, 0.3s;
+  content: "@ ashion_shop";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #0b0b0b;
+}
+
+.sbi_photo:hover::after {
+  opacity: 1;
+}

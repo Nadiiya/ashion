@@ -4,8 +4,6 @@ require_once THEME_DIR .'/inc/classes/ThemeAdvantages.class.php';
 
 get_header();
 
-echo get_breadcrumbs_section();
-
 get_header(); ?>
 <!-- Categories Section Begin -->
 <section class="categories">

@@ -4,7 +4,7 @@
  **/
 
 
-require_once THEME_DIR .'/inc/classes/ThemeAbout.class.php';
+require_once THEME_DIR .'/inc/classes/ThemeAdvantages.class.php';
 
 $about = new ThemeAdvantages();
 
