@@ -40,4 +40,19 @@ HTML;
 
 		return $block;
 	}
+
+	/*
+	* Right-menu
+	*/
+	function get_lang_menu() {
+		$lang_menu = wp_nav_menu(array(
+			'echo' => false,
+			'theme_location' => 'top_menu',
+			'container'       => '',
+			'container_class' => '',
+			'menu_class' => 'header__right__lang',
+		));
+
+		return $lang_menu;
+	}
 }

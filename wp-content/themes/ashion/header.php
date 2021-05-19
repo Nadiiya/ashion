@@ -55,6 +55,7 @@ $header = new ThemeHeader();
 			<?php echo $header->get_main_menu(); ?>
 			<div class="col-lg-3">
 				<div class="header__right">
+					<?php echo $header->get_lang_menu() ;?>
 					<div class="header__right__auth">
 						<a href="#">Login</a>
 						<a href="#">Register</a>

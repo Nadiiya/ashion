@@ -115,6 +115,35 @@
 .header__right {
   text-align: right;
   padding: 30px 0 27px;
+
+  .header__right__lang {
+    display: inline-block;
+    margin: 0 5px 0 0;
+    list-style: none;
+
+    .menu-item {
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        .sub-menu {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+
+      a {
+        color: $heading-color;
+        font-size: 12px;
+      }
+    }
+
+    .sub-menu {
+      display: inline-block;
+      visibility: hidden;
+      opacity: 0;
+      list-style: none;
+    }
+  }
 }
 
 .header__right__auth {
