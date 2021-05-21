@@ -6,6 +6,7 @@ function featured_posts_shortcode() {
 		array(
 		'numberposts' => 3,
 		'post_status' => 'publish',
+		'suppress_filters' => false,
 		)
 	);
 
