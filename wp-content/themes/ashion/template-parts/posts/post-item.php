@@ -6,6 +6,7 @@ $date = get_the_date('M d, Y');
 $author = get_the_author();
 $thumbnail = has_post_thumbnail() ? get_the_post_thumbnail_url() : get_template_directory_uri().'/assets/images/default-placeholder.png';
 $permalink = get_permalink();
+$text_by = __('by', 'ashion');
 //TODO add large__item dynamic class
 ?>
 
@@ -14,7 +15,7 @@ $permalink = get_permalink();
 	<div class="blog__item__text">
 		<h6><a href="<?php echo $permalink; ?>"><?php echo $title; ?></a></h6>
 		<ul>
-			<li>by <span><?php echo $author; ?></span></li>
+			<li><?php echo $text_by; ?><span> <?php echo $author; ?></span></li>
 			<li><?php echo $data; ?></li>
 		</ul>
 	</div>

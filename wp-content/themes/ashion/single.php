@@ -10,6 +10,8 @@ $breadcrumbs = get_breadcrumbs_section();
 $comments_number = get_comments_number();
 $tags_list = get_the_tag_list();
 $category = get_the_category()[0]->cat_name;
+$previous_posts_text = __('Previous posts', 'ashion');
+$next_post_text = __('Next posts', 'ashion');
 ?>
 
 <!-- Breadcrumb HTML -->
@@ -32,7 +34,7 @@ $category = get_the_category()[0]->cat_name;
 							<ul>
 								<li><?php _e('by', 'ashion');?> <span><?php echo $author; ?></span></li>
 								<li><?php echo $date; ?></li>
-								<li><?php echo $comments_number;  _e(' Comments', 'ashon'); ?></li>
+								<li><?php echo $comments_number;  _e(' Comments', 'ashion'); ?></li>
 <!--								TODO change word 'comments' depending on the comments count-->
 							</ul>
 						</div>
@@ -40,14 +42,6 @@ $category = get_the_category()[0]->cat_name;
 					<div class="blog__details__desc">
 						<?php echo $content; ?>
 					</div>
-<!--					TODO styles for content quote-->
-					<div class="blog__details__quote">
-						<div class="icon"><i class="fa fa-quote-left"></i></div>
-						<p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna
-							aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-							aliquip ex ea commodo consequat.</p>
-					</div>
-
 					<div class="blog__details__tags">
 						<?php echo $tags_list; ?>
 					</div>
@@ -56,12 +50,12 @@ $category = get_the_category()[0]->cat_name;
 							<div class="col-lg-6 col-md-6 col-sm-6">
 								<div class="blog__details__btn__item">
 <!--									TODO if previous or next is not exist-->
-									<h6><?php previous_post_link(' %link', '<i class="fa fa-angle-left"></i> Previous posts'); ?></h6>
+									<h6><?php previous_post_link(' %link', '<i class="fa fa-angle-left"></i>' . $previous_posts_text); ?></h6>
 								</div>
 							</div>
 							<div class="col-lg-6 col-md-6 col-sm-6">
 								<div class="blog__details__btn__item blog__details__btn__item--next">
-									<h6><?php next_post_link(' %link', 'Next posts <i class="fa fa-angle-right"></i> '); ?></h6>
+									<h6><?php next_post_link(' %link', $next_post_text . ' <i class="fa fa-angle-right"></i> '); ?></h6>
 								</div>
 							</div>
 						</div>
@@ -122,62 +116,8 @@ $category = get_the_category()[0]->cat_name;
 		</div>
 	</div>
 </section>
-<!-- Instagram Begin -->
-<div class="instagram">
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-lg-2 col-md-4 col-sm-4 col-md-6 col-sm-6 p-0">
-				<div class="instagram__item set-bg" data-setbg="<?php echo $temp_html ?>img/instagram/insta-1.jpg">
-					<div class="instagram__text">
-						<i class="fa fa-instagram"></i>
-						<a href="#">@ ashion_shop</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-2 col-md-4 col-sm-4 col-md-6 col-sm-6 p-0">
-				<div class="instagram__item set-bg" data-setbg="<?php echo $temp_html ?>img/instagram/insta-2.jpg">
-					<div class="instagram__text">
-						<i class="fa fa-instagram"></i>
-						<a href="#">@ ashion_shop</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-2 col-md-4 col-sm-4 col-md-6 col-sm-6 p-0">
-				<div class="instagram__item set-bg" data-setbg="<?php echo $temp_html ?>img/instagram/insta-3.jpg">
-					<div class="instagram__text">
-						<i class="fa fa-instagram"></i>
-						<a href="#">@ ashion_shop</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-2 col-md-4 col-sm-4 col-md-6 col-sm-6 p-0">
-				<div class="instagram__item set-bg" data-setbg="<?php echo $temp_html ?>img/instagram/insta-4.jpg">
-					<div class="instagram__text">
-						<i class="fa fa-instagram"></i>
-						<a href="#">@ ashion_shop</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-2 col-md-4 col-sm-4 col-md-6 col-sm-6 p-0">
-				<div class="instagram__item set-bg" data-setbg="<?php echo $temp_html ?>img/instagram/insta-5.jpg">
-					<div class="instagram__text">
-						<i class="fa fa-instagram"></i>
-						<a href="#">@ ashion_shop</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-2 col-md-4 col-sm-4 col-md-6 col-sm-6 p-0">
-				<div class="instagram__item set-bg" data-setbg="<?php echo $temp_html ?>img/instagram/insta-6.jpg">
-					<div class="instagram__text">
-						<i class="fa fa-instagram"></i>
-						<a href="#">@ ashion_shop</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- Instagram End -->
+
+<?php echo do_shortcode('[instagram-feed]');?>
 
 <?php
 get_footer();

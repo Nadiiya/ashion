@@ -26,13 +26,15 @@ HTML;
 		$discount_title       = $data['discount_title'];
 		$per_sent             = $data['discount_per_sent'];
 		$link                 = $data['buy_now_link'];
+		$discount_text        = __( 'discount', 'ashion' );
+		$sale_text            = __( 'sale', 'ashion' );
 		$html_text            = <<<HTML
 <div class="col-lg-6 p-0">
     <div class="discount__text">
         <div class="discount__text__title">
-			<span>Discount</span>
+			<span>{$discount_text}</span>
 			<h2>{$discount_title}</h2>
-			<h5><span>Sale</span>{$per_sent}%</h5>
+			<h5><span>{$sale_text}</span>{$per_sent}%</h5>
         </div>
         <div class="discount__countdown" id="countdown-time" data-time="{$finish_discount_date}">
         </div>
