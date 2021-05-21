@@ -255,9 +255,9 @@
         ],
         [
             {
-                "param": "page",
+                "param": "page_type",
                 "operator": "==",
-                "value": "14"
+                "value": "front_page"
             }
         ]
     ],
@@ -271,5 +271,5 @@
     ],
     "active": true,
     "description": "",
-    "modified": 1621252378
+    "modified": 1621607227
 }

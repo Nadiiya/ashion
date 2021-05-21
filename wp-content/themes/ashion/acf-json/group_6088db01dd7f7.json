@@ -309,6 +309,25 @@
             ]
         },
         {
+            "key": "field_60a7b70fcb3ff",
+            "label": "Copyright Text",
+            "name": "copyright_text",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
             "key": "field_609f62899fe7c",
             "label": "API Keys",
             "name": "",
@@ -361,5 +380,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1621164234
+    "modified": 1621604373
 }
