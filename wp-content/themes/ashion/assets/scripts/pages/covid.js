@@ -66,7 +66,6 @@ $(document).ready(function () {
 
 							countryChart.update()
 						}
-
 					} else {
 						var errorMessage = data.error
 						$('.covid-results .error-message').text(errorMessage).fadeIn(300);
@@ -74,7 +73,6 @@ $(document).ready(function () {
 					}
 				},
 			})
-
 		})
 	}
 })
