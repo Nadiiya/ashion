@@ -9,11 +9,14 @@ import 'owl.carousel/dist/owl.carousel.min'
 import 'jquery.nicescroll/dist/jquery.nicescroll.min'
 import 'slicknav/dist/jquery.slicknav'
 import 'masonry-layout/dist/masonry.pkgd.min'
+import 'select2/dist/js/select2'
+import 'chart.js/dist/Chart.min'
 
 import './pages/news'
 import './pages/team'
 import './pages/map'
 import './components/discount'
+import './pages/covid'
 
 'use strict';
 

@@ -20,4 +20,5 @@ require_once THEME_DIR . '/inc/wp/widget_areas.php';
 require_once THEME_DIR . '/inc/wp/menus.php';
 require_once THEME_DIR . '/inc/shortcodes/footer_shortcodes.php';
 require_once THEME_DIR . '/inc/shortcodes/sidebar_shortcodes.php';
+require_once THEME_DIR . '/inc/ajax/covid.php';
 
