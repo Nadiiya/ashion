@@ -36,10 +36,6 @@ import './pages/covid'
 			$('.filter__controls li').removeClass('active');
 			$(this).addClass('active');
 		});
-		// if ($('.property__gallery').length > 0) {
-		// 	var containerEl = document.querySelector('.property__gallery');
-		// 	var mixer = mixitup(containerEl);
-		// }
 	});
 
 	/*------------------
@@ -152,40 +148,6 @@ import './pages/covid'
 		cursorborderradius:50,
 		horizrailenabled: false,
 	});
-
-	/*------------------
-		CountDown
-	--------------------*/
-	//For demo preview start
-	// var today = new Date();
-	// var dd = String(today.getDate()).padStart(2, '0');
-	// var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-	// var yyyy = today.getFullYear();
-	//
-	// if(mm == 12) {
-	// 	mm = '01';
-	// 	yyyy = yyyy + 1;
-	// } else {
-	// 	mm = parseInt(mm) + 1;
-	// 	mm = String(mm).padStart(2, '0');
-	// }
-	// var timerdate = mm + '/' + dd + '/' + yyyy;
-	// // For demo preview end
-
-
-	// Uncomment below and use your date //
-
-	//var timerdate = '2021/05/19';
-	//var timerdate = $("#countdown-time").attr('data-time');
-
-	// $('#countdown-time').countdown('2021/05/20', function(event) {
-	// 	var $this = $(this).html(event.strftime(''
-	// 			+ '<span>%w</span> weeks '
-	// 			+ '<span>%d</span> days '
-	// 			+ '<span>%H</span> hr '
-	// 			+ '<span>%M</span> min '
-	// 			+ '<span>%S</span> sec'));
-	// });
 
 	/*-------------------
 		Range Slider

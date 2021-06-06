@@ -1,6 +1,6 @@
-/*Fix WPML term input*/
+/* Fix WPML term input */
 #term-name,
 #term-slug,
 #term-description {
-	width: 100px;
+  width: 100px;
 }
