@@ -34,28 +34,29 @@
 
       .list_inner {
         display: flex;
+        flex-wrap: wrap;
+      }
 
-        a.team_member {
-          width: 20%;
-          padding: 20px;
+      a.team_member {
+        width: 20%;
+        padding: 20px;
 
-          .team_avatar {
-            border-radius: 50%;
-            overflow: hidden;
-          }
+        .team_avatar {
+          border-radius: 50%;
+          overflow: hidden;
+        }
 
-          .team_name {
-            text-transform: uppercase;
-            font-size: 18px;
-            font-weight: bold;
-            text-align: center;
-            padding-top: 20px;
-          }
+        .team_name {
+          text-transform: uppercase;
+          font-size: 18px;
+          font-weight: bold;
+          text-align: center;
+          padding-top: 20px;
+        }
 
-          .team_position {
-            text-transform: uppercase;
-            text-align: center;
-          }
+        .team_position {
+          text-transform: uppercase;
+          text-align: center;
         }
       }
     }

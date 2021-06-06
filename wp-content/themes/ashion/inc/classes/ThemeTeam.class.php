@@ -55,6 +55,7 @@ class ThemeTeam {
 			$member_id = $team_item->ID;
 			$member_title = $team_item->post_title;
 			$member_position = get_field('position', $member_id);
+			$member_url = get_permalink( $member_id );
 
 			// Получение аватара
 			$member_avatar = get_the_post_thumbnail_url($member_id);
@@ -69,7 +70,8 @@ class ThemeTeam {
 				'avatar' => $member_avatar,
 				'name' => $member_title,
 				'position' => $member_position,
-				'department_id' => $member_department_id
+				'department_id' => $member_department_id,
+				'url' => $member_url,
 			);
 		}
 
@@ -93,7 +95,7 @@ class ThemeTeam {
 			foreach($department_members as $dep_member) {
 				// Подготавливаем HTML каждого сотрудника
 				$html_members .= <<<HTML
-		<a href="#" class="team_member">
+		<a href="{$dep_member['url']}" class="team_member">
 			<div class="team_avatar"><img src="{$dep_member['avatar']}" alt=""></div>
 			<div class="team_name">{$dep_member['name']}</div>
 			<div class="team_position">{$dep_member['position']}</div>

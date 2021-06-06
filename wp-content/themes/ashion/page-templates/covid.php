@@ -12,7 +12,7 @@
 		<div class="col-lg-12">
 			<div class="countries-list">
 				<select id="countries" style='width: 200px;'">
-				<option>---<?php _e('choose a country', 'ashion') ?>---</option>
+				<option>---<?php _e( 'choose a country', 'ashion' ) ?>---</option>
 				</select>
 			</div>
 		</div>
