@@ -12,6 +12,7 @@ require_once THEME_DIR .'/inc/wp/theme-support.php';
 require_once THEME_DIR .'/inc/wp/theme-support.php';
 require_once THEME_DIR .'/inc/wp/images_sizes.php';
 require_once THEME_DIR .'/inc/wp/terms_links.php';
+require_once THEME_DIR .'/inc/wp/loadmore.php';
 require_once THEME_DIR . '/inc/hooks/images.php';
 require_once THEME_DIR . '/inc/hooks/tag_cloud.php';
 require_once THEME_DIR . '/inc/acf/options-page.php';
@@ -21,4 +22,3 @@ require_once THEME_DIR . '/inc/wp/menus.php';
 require_once THEME_DIR . '/inc/shortcodes/footer_shortcodes.php';
 require_once THEME_DIR . '/inc/shortcodes/sidebar_shortcodes.php';
 require_once THEME_DIR . '/inc/ajax/covid.php';
-

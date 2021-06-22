@@ -16,11 +16,13 @@ import './pages/news'
 import './pages/team'
 import './pages/map'
 import './components/discount'
+import './components/loadmore'
 import './pages/covid'
 
 'use strict';
 
 (function ($) {
+
 
 	/*------------------
 		Preloader
@@ -28,7 +30,6 @@ import './pages/covid'
 	$(window).on('load', function () {
 		$(".loader").fadeOut();
 		$("#preloder").delay(200).fadeOut("slow");
-
 		/*------------------
 			Product filter
 		--------------------*/
